@@ -1,0 +1,13 @@
+.Wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 4rem;
+    width: 80vw;
+    background-color: #F4EDE6;
+    border-radius: 30px;
+}
+
+.img {
+    margin: 10px;
+
+}

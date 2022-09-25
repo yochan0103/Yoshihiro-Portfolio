@@ -1,0 +1,27 @@
+.GreetingWrapper{
+    align-items: center;
+    margin:5rem;
+    display: flex;
+}
+
+.ContentsWrapper{
+    width:30vw;
+    height:auto;
+    margin:70px
+}
+
+.title {
+    font-size: 2.5rem;
+    justify-items: center;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.3em;    
+}
+
+.Contents{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    line-height: 3rem;
+    text-align: start;
+}

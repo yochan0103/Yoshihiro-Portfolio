@@ -1,0 +1,32 @@
+.name{
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+.ContentsWrapper {
+    margin-top:3.5rem;
+    width:80vw;
+    height:auto;
+    padding: auto;
+}
+
+.TitleWrapper {
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-top:10px;
+    display: inline-block;
+    border-bottom: 2px solid;
+    padding: 10px;
+    letter-spacing: 0.3em;
+    font-family: Times;
+}
+
+.FormWrapper {
+    margin:auto;
+    justify-content: center;
+    display: flex;
+}

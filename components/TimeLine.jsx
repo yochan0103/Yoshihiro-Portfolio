@@ -19,72 +19,152 @@ const TimeLine =() => {
       </div>
       <Timeline position='alternate'> 
         <TimelineItem>
-          <TimelineOppositeContent color="text.secondary" fontSize='1.5rem'>
+          <TimelineOppositeContent 
+            sx={{color:"text.secondary",
+                 fontSize:'1.5rem',
+                 '@media screen and (max-width:900px)':{
+                    fontSize:'20px'
+                 }
+          }} >
             1997年
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot>
-              <FaBaby fontSize='1.5rem'/>
+              <FaBaby 
+                sx={{fontSize:'1.5rem',
+                    '@media screen and (max-width:900px)':{
+                      fontSize:'20px'
+                    }
+              }}/>
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent fontSize='1.5rem'>
+          <TimelineContent 
+            sx={{fontSize:'1.5rem',
+                '@media screen and (max-width:900px)':{
+                  fontSize:'20px'
+                }
+            }}>
             出生
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
-          <TimelineOppositeContent fontSize='1.5rem'>
+          <TimelineOppositeContent 
+            sx={{fontSize:'1.5rem',
+                '@media screen and (max-width:900px)':{
+                  fontSize:'20px'
+                }
+          }}>
             富山大学入学
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot>
-              <FaSchool fontSize='1.5rem' />
+              <FaSchool 
+                sx={{fontSize:'1.5rem',
+                    '@media screen and (max-width:900px)':{
+                      fontSize:'20px'
+                    }
+            }} />
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent color='text.secondary' fontSize='1.5rem'>
+          <TimelineContent 
+            sx={{color:"text.secondary",
+                 fontSize:'1.5rem',
+                 '@media screen and (max-width:900px)':{
+                    fontSize:'20px'
+                  }
+          }}>
             2016年
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
-          <TimelineOppositeContent color='text.secondary' fontSize='1.5rem'>
+          <TimelineOppositeContent 
+            sx={{color:"text.secondary",
+                 fontSize:'1.5rem',
+                 '@media screen and (max-width:900px)':{
+                    fontSize:'20px'
+                  }
+          }}>
             2020年
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot>
-              <FaPen fontSize='1.5rem' />
+              <FaPen 
+                sx={{fontSize:'1.5rem',
+                    '@media screen and (max-width:900px)':{
+                      fontSize:'20px'
+                    }
+            }} />
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent fontSize='1.5rem'>
+          <TimelineContent 
+            sx={{fontSize:'1.5rem',
+                '@media screen and (max-width:900px)':{
+                  fontSize:'20px'
+                }
+          }}>
             富山大学卒業<br />富山大学大学院入学
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
-          <TimelineOppositeContent fontSize='1.5rem'>
+          <TimelineOppositeContent 
+            sx={{fontSize:'1.5rem',
+                '@media screen and (max-width:900px)':{
+                  fontSize:'20px'
+                }
+          }}>
             富山大学大学院卒業
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot>
-              <FaGraduationCap fontSize='1.5rem' />
+              <FaGraduationCap 
+                sx={{fontSize:'1.5rem',
+                    '@media screen and (max-width:900px)':{
+                      fontSize:'20px'
+                    }
+              }} />
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent color='text.secondary' fontSize='1.5rem'>
+          <TimelineContent 
+            sx={{color:"text.secondary",
+                 fontSize:'1.5rem',
+                 '@media screen and (max-width:900px)':{
+                    fontSize:'20px'
+                  }
+          }}>
             2022年
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
-          <TimelineOppositeContent color='text.secondary' fontSize='1.5rem'>
-            2022年〜現在
+          <TimelineOppositeContent 
+            sx={{color:"text.secondary",
+                 fontSize:'1.5rem',
+                 '@media screen and (max-width:900px)':{
+                    fontSize:'20px'
+                  }
+          }}>
+            〜現在
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot>
-              <MdComputer fontSize='1.5rem' />
+              <MdComputer 
+                sx={{fontSize:'1.5rem',
+                    '@media screen and (max-width:900px)':{
+                      fontSize:'20px'
+                    }
+            }} />
             </TimelineDot>
           </TimelineSeparator>
-          <TimelineContent fontSize='1.5rem'>
-            株式会社NTTドコモ　在籍
+          <TimelineContent 
+            sx={{fontSize:'1.5rem',
+                '@media screen and (max-width:900px)':{
+                  fontSize:'20px'
+                }
+          }}>
+            株式会社NTTドコモ 在籍
           </TimelineContent>
         </TimelineItem>
       </Timeline>

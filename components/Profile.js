@@ -18,9 +18,11 @@ const Profile = () => {
                     出身 : 新潟県<br />
                     居住地 : 千葉県<br />
                     趣味 : サウナ/Youtube鑑賞/美術館へ行くこと<br />
-                    <a href="https://github.com/yochan0103?tab=repositories" className={styles.icons}>
-                        <AiFillGithub  />
-                    </a>
+                    <div className={styles.icons}>
+                        <a href="https://github.com/yochan0103?tab=repositories">
+                            <AiFillGithub  />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>   

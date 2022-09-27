@@ -53,3 +53,26 @@
     overflow-wrap: break-word;
 }
 
+@media screen and (max-width:900px) {
+    .Wrapper {
+        margin-top:0;
+        width: 100vw;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .ContentsWrapper {
+        width:90vw;
+    }
+
+    .ContentsTitle {
+        font-size: 28px;
+    }
+
+    .sentence {
+        font-size: 18px;
+    }
+}
+

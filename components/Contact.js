@@ -55,7 +55,11 @@ const Contacts = () => {
         </div>
         <Grid container justifyContent='center'>
             <form onSubmit={onSubmit}>
-              <Box sx={{width:'40vw', m:3}}>
+              <Box sx={{width:'40vw', m:3, 
+                        '@media screen and (max-width:900px)':{
+                          width:'90vw'
+                          }
+                      }} >
                   <label htmlFor="name">
                   お名前
                   </label>
@@ -70,7 +74,11 @@ const Contacts = () => {
                   required
                   />
               </Box>
-              <Box sx={{width:'40vw', m:3}}>
+              <Box sx={{width:'40vw', m:3,
+                        '@media screen and (max-width:900px)':{
+                          width:'90vw'
+                          }
+              }}>
                   <label>
                   メールアドレス
                   </label>
@@ -85,7 +93,11 @@ const Contacts = () => {
                   required
                   />
               </Box>
-              <Box sx={{width:'40vw', m:3}}>
+              <Box sx={{width:'40vw', m:3,
+                        '@media screen and (max-width:900px)':{
+                          width:'90vw'
+                          }
+              }}>
                   <label>
                   お問い合わせ内容
                   </label>

@@ -14,7 +14,9 @@ const Greeting = () => {
                     まだまだ駆け出したばかりですが、自身のスキルアップかつ本業へのコミットを目指し日々勉学を続けています。
                 </div>
             </div>
-            <Image src='/aboutme.JPG' alt='myimage' width={800} height={600} objectFit='contain' />
+            <div className={styles.ImageWrapper}>
+                <Image src='/aboutme.JPG' alt='myimage' width={800} height={600} objectFit='contain' />
+            </div>
         </div>
     )
 }

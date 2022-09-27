@@ -7,7 +7,7 @@
 .ContentsWrapper{
     width:30vw;
     height:auto;
-    margin:70px
+    margin:70px;
 }
 
 .title {
@@ -24,4 +24,30 @@
     margin-top: 20px;
     line-height: 3rem;
     text-align: start;
+}
+
+@media screen and (max-width:900px) {
+    .GreetingWrapper{
+        margin-top:0;
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
+
+    .ContentsWrapper{
+        width:80vw;
+    }
+
+    .title {
+        font-size:28px;
+    }
+
+    .Contents{
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .ImageWrapper {
+        width:90vw;
+    }
 }

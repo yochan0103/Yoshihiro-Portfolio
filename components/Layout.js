@@ -66,7 +66,7 @@ export default function Layout({children, title = "HP by Netsu"}){
                         </Link>
                         <Link to='about' smooth={true} offset={-100} className='hover:cursor-pointer'>
                             <div className={styles.Itemslink}>
-                                Itemslink
+                                About
                             </div>
                         </Link>
                         <Link to='timeline' smooth={true} offset={-100} className='hover:cursor-pointer'>

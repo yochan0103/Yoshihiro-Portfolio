@@ -38,6 +38,12 @@
     font-family: Times;
 }
 
+.logo {
+    margin-right: 100px;
+    font-family: 'Passions Conflict', cursive;
+    font-size: 36px;
+}
+
 .Navhome {
     display: flex;
     --tw-space-x-reverse: 0;
@@ -72,14 +78,25 @@
     .Nav{
         display: none;
     }
+
     .HamburgerNav{
         margin-top:1rem;
         width: 100vw;
         height: auto;
         align-items: center;
         opacity: 1;
+        display: flex;
+    }
+
+    .LogoWrapper {
+        margin-left: 32.5vw;
     }
     
+    .logo {
+        font-size: 22px;
+        font-family: 'Passions Conflict', cursive;
+    }
+
     .HamburgerIcon {
         position: absolute;
         right: 5%;

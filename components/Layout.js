@@ -13,10 +13,18 @@ export default function Layout({children, title = "HP by Netsu"}){
         <div className={styles.wraper}>
             <Head>
                 <title>{title}</title>
+                <meta charSet="utf-8" />
+                <meta
+                    name="portfolio"
+                    content="Yoshihiro Netsu のポートフォリオサイトです。"
+                ></meta>
             </Head>
             <header className={styles.head}>
                 <nav className={styles.Nav}>
                     <div className={styles.Navitems}>
+                        <Link to='greeting' smooth={true} offset={-100} className='hover:cursor-pointer'>
+                            <div className={styles.logo}>Yoshihiro Netsu</div>
+                        </Link>
                         <div className={styles.Navhome}>
                             <Link to='greeting' smooth={true} offset={-100} className='hover:cursor-pointer'>
                                 <div className={styles.Itemslink}>
@@ -47,6 +55,11 @@ export default function Layout({children, title = "HP by Netsu"}){
                     </div>
                 </nav> 
                 <nav className={styles.HamburgerNav}>
+                    <div className={styles.LogoWrapper}>
+                        <Link to='greeting' smooth={true} offset={-100} className='hover:cursor-pointer'>
+                            <div className={styles.logo}>Yoshihiro Netsu</div>
+                        </Link>
+                    </div>
                     {openMenu ? <CgCloseR className={styles.HamburgerIcon} 
                                 size='40px' 
                                 color='black'

@@ -1,4 +1,5 @@
 import Document, { DocumentContext } from 'next/document';
+import Head from 'next/head';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
@@ -18,6 +19,9 @@ export default class MyDocument extends Document {
         ...initialProps,
         styles: (
           <>
+            <Head>
+              <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet" />
+            </Head>
             {initialProps.styles}
             {sheet.getStyleElement()}
           </>

@@ -1,9 +1,7 @@
 import Head from "next/head"
-import Image from "next/image"
 import styles from "../components/styles/Layout.module.css"
 import { Link } from "react-scroll"
 import { useState } from "react"
-import { slide as Menu } from 'react-burger-menu'
 import { CgMenu } from 'react-icons/cg'
 import { CgCloseR } from 'react-icons/cg'
 

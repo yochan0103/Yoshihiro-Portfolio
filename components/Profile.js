@@ -19,7 +19,7 @@ const Profile = () => {
                     居住地 : 千葉県<br />
                     趣味 : サウナ/Youtube鑑賞/美術館へ行くこと<br />
                     <div className={styles.icons}>
-                        <a href="https://github.com/yochan0103?tab=repositories">
+                        <a href="https://github.com/yochan0103?tab=repositories" alt='Github'>
                             <AiFillGithub  />
                         </a>
                     </div>

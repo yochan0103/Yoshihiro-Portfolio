@@ -55,7 +55,7 @@ export default function Layout({children, title = "HP by Netsu"}){
                         </div>
                     </div>
                 </nav> 
-                <nav class={styles.HamburgerStyle}>
+                <nav className={styles.HamburgerStyle}>
                     <div className={styles.HamburgerLocation}>
                         <div className={styles.LogoWrapper}>
                             <Link to='greeting' smooth={true} offset={-50} className='hover:cursor-pointer'>

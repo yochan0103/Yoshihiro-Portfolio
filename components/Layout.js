@@ -7,6 +7,9 @@ import { CgCloseR } from 'react-icons/cg'
 
 export default function Layout({children, title = "HP by Netsu"}){
     const [ openMenu, setOpenMenu ] = useState(false);
+    const menuFunction = () => {
+        setOpenMenu(!openMenu);
+    }
      return (
         <div className={styles.wraper}>
             <Head>
@@ -52,50 +55,56 @@ export default function Layout({children, title = "HP by Netsu"}){
                         </div>
                     </div>
                 </nav> 
-                <nav className={styles.HamburgerNav}>
-                    <div className={styles.LogoWrapper}>
-                        <Link to='greeting' smooth={true} offset={-100} className='hover:cursor-pointer'>
-                            <div className={styles.logo}>Yoshihiro Netsu</div>
-                        </Link>
+                <nav class={styles.HamburgerStyle}>
+                    <div className={styles.HamburgerLocation}>
+                        <div className={styles.LogoWrapper}>
+                            <Link to='greeting' smooth={true} offset={-50} className='hover:cursor-pointer'>
+                                <div className={styles.logo}>Yoshihiro Netsu</div>
+                            </Link>
+                        </div>
+                        <div className={styles.HamburgerWrapper}>
+                            {openMenu ? <CgCloseR className={styles.HamburgerIcon} 
+                                        size='40px' 
+                                        color='black'
+                                        onClick={() => setOpenMenu(!openMenu)}
+                                        /> : 
+                                        <CgMenu className={styles.HamburgerIcon} 
+                                        size='40px' 
+                                        color='black'
+                                        onClick={() => setOpenMenu(!openMenu)}
+                                        />
+                            }
+                        </div>
                     </div>
-                    {openMenu ? <CgCloseR className={styles.HamburgerIcon} 
-                                size='40px' 
-                                color='black'
-                                onClick={() => setOpenMenu(!openMenu)}
-                                /> : 
-                                <CgMenu className={styles.HamburgerIcon} 
-                                size='40px' 
-                                color='black'
-                                onClick={() => setOpenMenu(!openMenu)}
-                                />
-                    }
-                    {openMenu && <div className={styles.HamburgerItems}>
-                        <Link to='greeting' smooth={true} offset={-100} className='hover:cursor-pointer'>
-                            <div className={styles.Itemslink}>
-                                Home
-                            </div>
-                        </Link>
-                        <Link to='about' smooth={true} offset={-100} className='hover:cursor-pointer'>
-                            <div className={styles.Itemslink}>
-                                About
-                            </div>
-                        </Link>
-                        <Link to='timeline' smooth={true} offset={-100} className='hover:cursor-pointer'>
-                            <div className={styles.Itemslink}>
-                                Biography
-                            </div>
-                        </Link>
-                        <Link to='works' smooth={true} offset={-100} className='hover:cursor-pointer'>
-                            <div className={styles.Itemslink}>
-                                Works
-                            </div>
-                        </Link>
-                        <Link to='contacts' smooth={true} offset={-100} className='hover:cursor-pointer'>
-                            <div className={styles.Itemslink}>
-                                Contact
-                            </div>
-                        </Link>
-                    </div>}
+                    <div className={styles.HamburgerNav}>
+                        {openMenu && <div className={styles.HamburgerItems}>
+                            <Link to='greeting' smooth={true} offset={-50} className='hover:cursor-pointer'>
+                                <button className={styles.Itemslink} onClick={menuFunction}>
+                                    Home
+                                </button>
+                            </Link>
+                            <Link to='about' smooth={true} offset={-50} className='hover:cursor-pointer'>
+                                <button className={styles.Itemslink} onClick={menuFunction}>
+                                    About
+                                </button>
+                            </Link>
+                            <Link to='timeline' smooth={true} offset={-50} className='hover:cursor-pointer'>
+                                <button className={styles.Itemslink} onClick={menuFunction}>
+                                    Biography
+                                </button>
+                            </Link>
+                            <Link to='works' smooth={true} offset={-50} className='hover:cursor-pointer'>
+                                <button className={styles.Itemslink} onClick={menuFunction}>
+                                    Works
+                                </button>
+                            </Link>
+                            <Link to='contacts' smooth={true} offset={-50} className='hover:cursor-pointer'>
+                                <button className={styles.Itemslink} onClick={menuFunction}>
+                                    Contact
+                                </button>
+                            </Link>
+                        </div>}
+                    </div>
                 </nav>
             </header>
             <main className={styles.main}>

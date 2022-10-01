@@ -81,13 +81,22 @@
         display: none;
     }
 
+    .HamburgerLocation {
+        display: flex;
+        position: fixed;
+        padding-bottom: 10px;
+        z-index: 2;
+    }
+
     .HamburgerNav{
-        margin-top:1rem;
         width: 100vw;
         height: auto;
         align-items: center;
         opacity: 1;
         display: flex;
+        background-color: white;
+        position: fixed;
+        z-index: 1;
     }
 
     .LogoWrapper {
@@ -96,12 +105,19 @@
     
     .logo {
         font-size: 32px;
+        margin-top:1rem;
+    }
+
+    .HamburgerWrapper {
+        display: flex;
+        flex-direction: column;
     }
 
     .HamburgerIcon {
         position: absolute;
         right: 5%;
         cursor: pointer;
+        margin-top: 0.5rem;
     }
     
     .HamburgerItems {
@@ -111,6 +127,11 @@
         font-family: Times;
         z-index: 1;
         font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 3rem;
+        transition: 0.5s ease-in-out;
     }
     .HamburgerItems:hover{
         opacity: 0.8;

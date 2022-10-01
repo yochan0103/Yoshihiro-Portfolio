@@ -88,10 +88,10 @@
         z-index: 2;
         background-color: white;
         opacity: 0.8;
+        width: 100vw;
     }
 
     .HamburgerNav{
-        width: 100vw;
         height: auto;
         align-items: center;
         opacity: 0.8;
@@ -103,6 +103,7 @@
 
     .LogoWrapper {
         margin-left: 32.5vw;
+        width: 100vw;
     }
     
     .logo {

@@ -19,6 +19,7 @@ export default function Layout({children, title = "HP by Netsu"}){
                     name="portfolio"
                     content="Yoshihiro Netsu のポートフォリオサイトです。"
                 ></meta>
+                <meta name="google-site-verification" content="5w-U8hzioKaKm2qcZJJ458qdu88KuWYHsua7itPBAaQ" />
             </Head>
             <header className={styles.head}>
                 <nav className={styles.Nav}>

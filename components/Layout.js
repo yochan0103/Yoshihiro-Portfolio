@@ -79,29 +79,29 @@ export default function Layout({children, title = "HP by Netsu"}){
                     <div className={styles.HamburgerNav}>
                         {openMenu && <div className={styles.HamburgerItems}>
                             <Link to='greeting' smooth={true} offset={-50} className='hover:cursor-pointer'>
-                                <button className={styles.Itemslink} onClick={menuFunction}>
+                                <a className={styles.Itemslink} onClick={menuFunction}>
                                     Home
-                                </button>
+                                </a>
                             </Link>
                             <Link to='about' smooth={true} offset={-50} className='hover:cursor-pointer'>
-                                <button className={styles.Itemslink} onClick={menuFunction}>
+                                <a className={styles.Itemslink} onClick={menuFunction}>
                                     About
-                                </button>
+                                </a>
                             </Link>
                             <Link to='timeline' smooth={true} offset={-50} className='hover:cursor-pointer'>
-                                <button className={styles.Itemslink} onClick={menuFunction}>
+                                <a className={styles.Itemslink} onClick={menuFunction}>
                                     Biography
-                                </button>
+                                </a>
                             </Link>
                             <Link to='works' smooth={true} offset={-50} className='hover:cursor-pointer'>
-                                <button className={styles.Itemslink} onClick={menuFunction}>
+                                <a className={styles.Itemslink} onClick={menuFunction}>
                                     Works
-                                </button>
+                                </a>
                             </Link>
                             <Link to='contacts' smooth={true} offset={-50} className='hover:cursor-pointer'>
-                                <button className={styles.Itemslink} onClick={menuFunction}>
+                                <a className={styles.Itemslink} onClick={menuFunction}>
                                     Contact
-                                </button>
+                                </a>
                             </Link>
                         </div>}
                     </div>

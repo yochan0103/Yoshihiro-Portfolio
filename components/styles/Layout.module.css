@@ -140,6 +140,11 @@
         opacity: 0.8;
     }
 
+    .Itemslink {
+        display: block;
+        margin: 10px;
+    }
+
     .main {
         margin-top: 10px;
     }

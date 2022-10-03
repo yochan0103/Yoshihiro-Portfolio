@@ -14,7 +14,7 @@ const TimeLine =() => {
   return (
     <>
       <NextSeo>
-        title={"Yoshihiro Netsuの生い立ち"}
+        title={"Yoshihiro Netsu(根津 嘉大)の生い立ち"}
         description={"1997年生まれで。富山県で学生時代を過ごし、2022年に上京。NTTドコモでではサービス開発の仕事を担っている。"}
       </NextSeo>
       <div className={styles.ContentsWrapper} id='timeline'>

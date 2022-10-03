@@ -6,8 +6,8 @@ const Greeting = () => {
     return (
         <>
             <NextSeo>
-                title={"Yoshihiro Netsuの自己紹介"}
-                description={"Yoshihiro Netsuの初めましてのご挨拶。reactを中心にwebサイトの構築を行なっています。"}
+                title={"Yoshihiro Netsu(根津 嘉大)の自己紹介"}
+                description={"Yoshihiro Netsu(根津 嘉大)の初めましてのご挨拶。reactを中心にwebサイトの構築を行なっています。"}
             </NextSeo>
             <div className={styles.GreetingWrapper} id='greeting'>
                 <div className={styles.ContentsWrapper}>

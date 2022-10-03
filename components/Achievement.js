@@ -7,7 +7,7 @@ const Achievement = (props) => {
         <>
             <NextSeo>
                 title={"成果物、制作物紹介"}
-                description={"Yoshihiro Netsuの過去に制作したホームページを掲載。"}
+                description={"Yoshihiro Netsu(根津 嘉大)の過去に制作したホームページを掲載。"}
             </NextSeo>
             <div className={styles.Wrapper} id='works'>
                 <div className={styles.TitleWrapper}>

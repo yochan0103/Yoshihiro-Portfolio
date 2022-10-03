@@ -53,7 +53,7 @@ const Contacts = () => {
     <>
       <NextSeo>
         title={"お問合せフォーム"}
-        description={"Yoshihiro Netsuへのお問合せフォーム。問い合わせはこちらから。"}
+        description={"Yoshihiro Netsu(根津 嘉大)へのお問合せフォーム。問い合わせはこちらから。"}
       </NextSeo>
       <div className={styles.ContentsWrapper} id='contacts'>
           <div className={styles.TitleWrapper}>

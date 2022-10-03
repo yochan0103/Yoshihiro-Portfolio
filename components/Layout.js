@@ -16,8 +16,8 @@ export default function Layout({children, title = "HP by Netsu"}){
                 <title>{title}</title>
                 <meta charSet="utf-8" />
                 <meta
-                    name="portfolio"
-                    content="Yoshihiro Netsu のポートフォリオサイトです。"
+                    name="Yoshihiro Netsu(根津 嘉大)のportfolio"
+                    content="Yoshihiro Netsu(根津 嘉大)のポートフォリオサイトです。"
                 ></meta>
                 <meta name="google-site-verification" content="5w-U8hzioKaKm2qcZJJ458qdu88KuWYHsua7itPBAaQ" />
             </Head>

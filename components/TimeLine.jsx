@@ -164,7 +164,7 @@ const TimeLine =() => {
                   fontSize:'20px'
                 }
           }}>
-            株式会社NTTドコモ 在籍
+            大手通信企業在籍
           </TimelineContent>
         </TimelineItem>
       </Timeline>

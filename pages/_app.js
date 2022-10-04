@@ -6,9 +6,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo
-        defaultTitle='Yoshihiro Netsuのポートフォリオ'
+        defaultTitle='Yoshihiro Netsu(根津 嘉大)のポートフォリオ'
         canonical='https://yoshihiro-netsu-introduce.vercel.app/'
-        description='Yoshihiro Netsuのポートフォリオサイトです。フロントエンドエンジニアとしてweb site制作を行います。
+        description='Yoshihiro Netsu(根津 嘉大)のポートフォリオサイトです。フロントエンドエンジニアとしてweb site制作を行います。
                       react(Next.js)でのコーディングが得意です。'
       />
       <Component {...pageProps} />

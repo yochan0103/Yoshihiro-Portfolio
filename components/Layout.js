@@ -48,6 +48,11 @@ export default function Layout({children, title = "HP by Netsu"}){
                                     Works
                                 </div>
                             </Link>
+                            <Link to='blog' smooth={true} offset={-100} className='hover:cursor-pointer'>
+                                <div className={styles.Itemslink}>
+                                    Blog
+                                </div>
+                            </Link>
                             <Link to='contacts' smooth={true} offset={-100} className='hover:cursor-pointer'>
                                 <div className={styles.Itemslink}>
                                     Contact
@@ -97,6 +102,11 @@ export default function Layout({children, title = "HP by Netsu"}){
                             <Link to='works' smooth={true} offset={-50} className='hover:cursor-pointer'>
                                 <a className={styles.Itemslink} onClick={menuFunction}>
                                     Works
+                                </a>
+                            </Link>
+                            <Link to='blog' smooth={true} offset={-100} className='hover:cursor-pointer'>
+                                <a className={styles.Itemslink}>
+                                    Blog
                                 </a>
                             </Link>
                             <Link to='contacts' smooth={true} offset={-50} className='hover:cursor-pointer'>

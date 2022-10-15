@@ -4,6 +4,7 @@ import TimeLine from '../components/TimeLine'
 import Achievement from '../components/Achievement'
 import Contacts from '../components/Contact'
 import Greeting from '../pages/Greeting'
+import ToBlog from '../components/ToBlog'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Profile />
       <TimeLine />
       <Achievement title={"サロンめめ"} src={"/Salon_scene.jpg"} alt={'サロンめめ'} sentence={'実姉のお店のHPを作成しました'} href={"https://memesalon.vercel.app/"}/>
+      <ToBlog />
       <Contacts />
     </Layout>
   )

@@ -41,8 +41,8 @@ const TimeLine =() => {
           </TimelineSeparator>
           <TimelineContent 
             sx={{fontSize:'1.5rem',
-                '@media screen and (max-width:900px)':{
-                  fontSize:'20px'
+                "@media screen and (max-width:900px)":{
+                  fontSize:"20px"
                 }
             }}>
             出生

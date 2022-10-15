@@ -1,0 +1,16 @@
+.Title {
+    font-size: 2rem;
+    text-align: center;
+    margin:1rem;
+}
+
+.PublishedTime {
+    text-align: center;
+    margin: 1rem;
+}
+
+.Contents {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    margin:2rem;
+}

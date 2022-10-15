@@ -1,12 +1,21 @@
 import { client } from '../../libs/client';
+import dayjs from 'dayjs';
+import styles from './[id].module.css'
 // import Image from 'next/image';
+
+export const ConvertTime = ({convertDate}) => {
+  const ConvertedTime = dayjs(convertDate).format('YYYY.MM.DD')
+  return ConvertedTime
+}
 
 const BlogId = ({ blog }) => {
   return (
     <main>
-      <h1>{blog.title}</h1>
-      <p>{blog.publishedAt}</p>
-      <div
+      <h1 className={styles.Title} >{blog.title}</h1>
+      <div className={styles.PublishedTime}>
+        <ConvertTime convertDate={blog.publishedAt} />
+      </div>
+      <div className={styles.Contents}
         dangerouslySetInnerHTML={{
           __html: `${blog.content}`,
         }}

@@ -2,15 +2,18 @@
     font-size: 2rem;
     text-align: center;
     margin:1rem;
+    color:black;
 }
 
 .PublishedTime {
     text-align: center;
     margin: 1rem;
+    color: black;
 }
 
 .Contents {
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
     margin:2rem;
+    color:black;
 }

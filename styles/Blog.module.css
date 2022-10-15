@@ -37,3 +37,20 @@
     margin: 1rem;
     text-align: left;
 }
+
+@media screen and (max-width:900px) {
+    .ContentsTitle {
+        font-size: 2rem;
+    }
+
+    .BlogTitle {
+        font-size: 1.2rem;
+    }
+
+    .BlogWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:1.2rem;
+    }
+}

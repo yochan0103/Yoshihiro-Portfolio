@@ -10,7 +10,7 @@ const ToBlog = () => {
                 <h1 className={styles.title}>Blog</h1>
             </div>
             <div className={styles.ContentsWrapper}>
-                <Link href='/Blog'>
+                <Link href='/Blog' scroll={false}>
                     <Grid container justifyContent='center' mt='20px'>
                         <Button
                         type="button"
@@ -28,7 +28,7 @@ const ToBlog = () => {
                 </Link>
             </div>
             <div className={styles.ContentsResponsiveWrapper}>
-                <Link href='/Blog'>
+                <Link href='/Blog' scroll={false}>
                     <Grid container justifyContent='center' mt='20px'>
                         <Button
                         type="button"

@@ -28,24 +28,24 @@ const Blog = ({blogs}) => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }} 
                 >
-                <div className={styles.ContentsTitle}>
-                    Yoshihiro Netsu Blog
-                </div>
-                    <ul className={styles.BlogWrapper}>
-                        {blogs.slice(0,3).map((blog) => (
-                            <li key={blog.id} className={styles.BlogContents}>
-                                <Card justify="center" elevation={5} sx={{ maxWidth:300, display:'flex' }}>
-                                    <CardActionArea>
-                                        <Link href={`/blog/${blog.id}`}>
-                                            <img src={blog.eyecatch.url} alt="" className={styles.ImageWrapper} />
-                                        </Link>
-                                        <ConvertTime convertDate={blog.publishedAt} className={styles.PublishedTime} />
-                                        <h1 className={styles.BlogTitle}>{blog.title}</h1>
-                                    </CardActionArea>
-                                </Card>
-                            </li>
-                        ))}
-                    </ul>
+                    <div className={styles.ContentsTitle}>
+                        Yoshihiro Netsu Blog
+                    </div>
+                        <ul className={styles.BlogWrapper}>
+                            {blogs.slice(0,3).map((blog) => (
+                                <li key={blog.id} className={styles.BlogContents}>
+                                    <Card justify="center" elevation={5} sx={{ maxWidth:300, display:'flex' }}>
+                                        <CardActionArea>
+                                            <Link href={`/blog/${blog.id}`}>
+                                                <img src={blog.eyecatch.url} alt="" className={styles.ImageWrapper} />
+                                            </Link>
+                                            <ConvertTime convertDate={blog.publishedAt} className={styles.PublishedTime} />
+                                            <h1 className={styles.BlogTitle}>{blog.title}</h1>
+                                        </CardActionArea>
+                                    </Card>
+                                </li>
+                            ))}
+                        </ul>
                 </motion.div>
             </div>
     )

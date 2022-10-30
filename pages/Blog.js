@@ -4,7 +4,6 @@ import { Card } from "@mui/material";
 import { CardActionArea } from '@mui/material'
 import styles from '../styles/Blog.module.css';
 import dayjs from 'dayjs';
-import { motion } from "framer-motion";
 
 export const getStaticProps = async () => {
     const blog = await client.get({ endpoint: "blogs" });
@@ -23,11 +22,6 @@ export const ConvertTime = ({convertDate}) => {
 const Blog = ({blogs}) => {
     return (
             <div className={styles.ContentsWrapper}>
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }} 
-                >
                     <div className={styles.ContentsTitle}>
                         Yoshihiro Netsu Blog
                     </div>
@@ -46,7 +40,6 @@ const Blog = ({blogs}) => {
                                 </li>
                             ))}
                         </ul>
-                </motion.div>
             </div>
     )
 }

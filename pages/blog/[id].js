@@ -1,8 +1,6 @@
 import { client } from '../../libs/client';
 import dayjs from 'dayjs';
 import styles from './[id].module.css'
-// import Image from 'next/image';
-import { motion } from 'framer-motion';
 
 export const ConvertTime = ({convertDate}) => {
   const ConvertedTime = dayjs(convertDate).format('YYYY.MM.DD')
@@ -11,11 +9,6 @@ export const ConvertTime = ({convertDate}) => {
 
 const BlogId = ({ blog }) => {
   return (
-    <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }} 
-      >
       <main>
           <h1 className={styles.Title} >{blog.title}</h1>
           <div className={styles.PublishedTime}>
@@ -27,7 +20,6 @@ const BlogId = ({ blog }) => {
             }}
           />
       </main>
-    </motion.div> 
   );
 }
 

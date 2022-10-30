@@ -10,8 +10,11 @@ export default function Layout({children, title = "HP by Netsu"}){
     const menuFunction = () => {
         setOpenMenu(!openMenu);
     }
+    const menuFunctionOpen = () => {
+        setOpenMenu(openMenu);
+    }
      return (
-        <div className={styles.wraper} onClick={menuFunction}>
+        <div className={styles.wraper}>
             <Head>
                 <title>{title}</title>
                 <meta charSet="utf-8" />

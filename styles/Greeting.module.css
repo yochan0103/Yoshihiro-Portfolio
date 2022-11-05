@@ -2,7 +2,36 @@
     align-items: center;
     margin:5rem;
     display: flex;
+    /* animation: zoomIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards; */
 }
+
+/* @keyframes zoomIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+} */
+
+.animation {
+    animation: fadeIn 2s linear both;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
 
 .ContentsWrapper{
     width:30vw;

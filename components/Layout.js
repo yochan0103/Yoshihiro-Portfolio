@@ -121,9 +121,13 @@ export default function Layout({children, title = "HP by Netsu"}){
                     </div>
                 </nav>
             </header>
-            <main className={styles.main}>
-                    {children}
-            </main>
+            {openMenu ? <main className={styles.main} onClick={menuFunction}>
+                                {children}
+                        </main>:
+                        <main className={styles.main} onClick={menuFunctionOpen}>
+                            {children}
+                        </main>
+            }
             <footer className={styles.footer}>
                 <div className={styles.footerItems}>
                     <p className={styles.fotterContents}>Copyright © 2022 Yoshihiro Netsu</p>

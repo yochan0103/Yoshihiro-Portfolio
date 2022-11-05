@@ -3,7 +3,7 @@ import 'tailwindcss/tailwind.css'
 import { DefaultSeo } from 'next-seo';
 import { AnimatePresence } from 'framer-motion'
 
-function MyApp({ Component, pageProps, router }) {
+function MyApp({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo
@@ -12,9 +12,10 @@ function MyApp({ Component, pageProps, router }) {
         description='Yoshihiro Netsu(根津 嘉大)のポートフォリオサイトです。フロントエンドエンジニアとしてweb site制作を行います。
                       react(Next.js)でのコーディングが得意です。'
       />
-      <AnimatePresence exitBeforeEnter onExitComplete={() => window.scrollTo(0, 0)}>
+      {/* <AnimatePresence exitBeforeEnter onExitComplete={() => window.scrollTo(0, 0)}>
         <Component key={router.asPath} {...pageProps} />
-      </AnimatePresence>
+      </AnimatePresence> */}
+      <Component {...pageProps} />
     </>
   )
 }

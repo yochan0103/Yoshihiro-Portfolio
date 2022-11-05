@@ -20,7 +20,7 @@ const AnimationTrigger = ({
   startClass = "",
   triggerOnce = false,
   className,
-  style
+  style,
 }: Props) => {
   const { ref, inView } = useInView({
     rootMargin: rootMargin,
